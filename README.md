@@ -1,13 +1,13 @@
-#0X16. C-Simple Shell
+# 0X16. C-Simple Shell
 
 *This is a group project of ALX software Engineering students.
 *It is a colloborative project done on a group of two. Here We were tasked to create a simple shell that mimics the Bash shell. Our shell shall be called hsh.
 
-##Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-##General
+## General
 
 *Who designed and implemented the original Unix operating system
 *Who wrote the first version of the UNIX shell
@@ -24,7 +24,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 *How to suspend the execution of a process until one of its children terminates
 *What is EOF / “end-of-file”?
 
-##Using the Shell (file name is hsh)
+## Using the Shell (file name is hsh)
 
 To Lauch hsh, compile all .c files in the repository and run the resulting executable.
 
@@ -53,7 +53,7 @@ Upon invocation, hsh receives and copies the environment of the parent process i
 
 some of these environmental variables includes: Home, Pwd, OldPwd, PATH, 
 
-##During Execution:
+## During Execution:
 
 After receiving a command, hsh tokenizes it into words using " " as a delimiter. The first word is considered the command and all remaining words are considered arguments to that command. 
 hsh then proceeds with the following actions:
@@ -63,7 +63,7 @@ If the first character of the command is none of a slash (\), dot (.), nor built
 If the first character of the command is a slash (\) or dot (.) or either of the above searches was successful, 
 the shell executes the named program with any remaining given arguments in a separate execution environment.
 
-##On exit;
+## On exit;
 
 *hsh returns the exit status of the last command executed, with zero indicating success and non-zero indicating failure.
 
@@ -71,13 +71,13 @@ the shell executes the named program with any remaining given arguments in a sep
 
 *All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message)
 
-##Signals
+## Signals
 
 While running in interactive mode, hsh ignores the keyboard input Ctrl+c. Alternatively, an input of end-of-file (Ctrl+d) will exit the program.
 
 User hits Ctrl+d in the third line.
 
-#General
+# General
 
 *Allowed editors: vi, vim, emacs
 *All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -91,7 +91,7 @@ User hits Ctrl+d in the third line.
 *Write a README with the description of your project
 *You should have an AUTHORS file at the root of your repository, listing all individuals having contributed content to the repository. Format, see Docker
 
-##More Info
+## More Info
 
 Output
 Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
@@ -131,17 +131,17 @@ wait3 (man 2 wait3)
 wait4 (man 2 wait4)
 write (man 2 write)
 
-##Compilation
+## Compilation
 
 Your shell will be compiled this way:
 
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-##Task 0:
+## Task 0:
 
 *Write a beautiful code that passes the Betty checks
 
-##Task 1:
+## Task 1:
 
 Write a UNIX command line interpreter.
 
@@ -164,20 +164,20 @@ be able to move the cursor
 handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
 
-##Task 2:
+## Task 2:
 
 *Simple shell 0.1 +
 
 *Handle command lines with arguments
 
-##Task 3:
+## Task 3:
 
 *Simple shell 0.2 +
 
 *Handle the PATH
 fork must not be called if the command doesn’t exist
 
-##Task 4:
+## Task 4:
 
 Simple shell 0.3 +
 
@@ -185,13 +185,13 @@ Simple shell 0.3 +
 Usage: exit
 *You don’t have to handle any argument to the built-in exit
 
-##Task 5:
+## Task 5:
 
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment
 
-##Task 6:
+## Task 6:
 
 Simple shell 0.1 +
 
@@ -203,20 +203,20 @@ Simple shell 0.1 +
 
 *be able to move the cursor
 
-##Task 7:
+## Task 7:
 
 Simple shell 0.2 +
 
 *You are not allowed to use strtok
 
-##Task 8:
+## Task 8:
 
 Simple shell 0.4 +
 
 *handle arguments for the built-in exit
 *Usage: exit status, where status is an integer used to exit the shell
 
-##Task 9:
+## Task 9:
 
 Simple shell 1.0 +
 
@@ -233,7 +233,7 @@ Remove an environment variable
 Command syntax: unsetenv VARIABLE
 Should print something on stderr on failure
 
-##Task 10:
+## Task 10:
 
 Simple shell 1.0 +
 
@@ -247,19 +247,19 @@ Changes the current directory of the process.
 *You have to update the environment variable PWD when you change directory
 man chdir, man getcwd
 
-##Task 11:
+## Task 11:
 
 Simple shell 1.0 +
 
 *Handle the commands separator ;
 
-##Task 12:
+## Task 12:
 
 Simple shell 1.0 +
 
 Handle the && and || shell logical operators
 
-##Task 13:
+## Task 13:
 
 Simple shell 1.0 +
 
@@ -270,7 +270,7 @@ Usage: alias [name[='value'] ...]
 *alias name [name2 ...]: Prints the aliases name, name2, etc 1 per line, in the form name='value'
 *alias name='value' [...]: Defines an alias for each name whose value is given. If name is already an alias, replaces its value with value
 
-##Task 14:
+## Task 14:
 
 Simple shell 1.0 +
 
@@ -278,13 +278,13 @@ Simple shell 1.0 +
 *Handle the $? variable
 *Handle the $$ variable
 
-##Task 15:
+## Task 15:
 
 Simple shell 1.0 +
 
 *Handle comments (#)
 
-##Task 16:
+## Task 16:
 
 Simple shell 1.0 +
 
